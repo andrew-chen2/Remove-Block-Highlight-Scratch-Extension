@@ -3,9 +3,7 @@
   "name": "Remove Scratch Block Highlight",
   "version": "1.0",
   "description": "Removes the highlight around blocks in the Scratch editor when they run.",
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": ["https://scratch.mit.edu/projects/*"],
