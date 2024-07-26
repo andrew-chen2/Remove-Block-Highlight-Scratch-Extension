@@ -6,11 +6,11 @@ function removeHighlightFilter() {
 removeHighlightFilter()
 
 const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.addedNodes.length > 0) {
-        removeHighlightFilter();
-      }
-    });
+  mutations.forEach((mutation) => {
+    if (mutation.addedNodes.length > 0) {
+      removeHighlightFilter();
+    }
   });
-  
-  observer.observe(document.body, { childList: true, subtree: true });
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
