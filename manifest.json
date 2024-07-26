@@ -4,12 +4,11 @@
   "version": "1.0",
   "description": "Removes the highlight around blocks in the Scratch editor when they run.",
   "permissions": [
-    "activeTab",
-    "storage"
+    "activeTab"
   ],
   "content_scripts": [
     {
-      "matches": ["*://scratch.mit.edu/projects/*"],
+      "matches": ["https://scratch.mit.edu/projects/*"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
